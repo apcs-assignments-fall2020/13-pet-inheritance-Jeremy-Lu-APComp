@@ -14,7 +14,9 @@ public class Dog extends Pet {
     }
 
     // makeNoise() method
-
+    public void makeNoise(){
+        System.out.println("Bark!");
+    }
 
     // toString method
 
@@ -29,4 +31,9 @@ public class Dog extends Pet {
     }
 
     // Setter
+    public void setBreed(String breed){
+        if(breed.trim().length() != 0){ //the length will never be less than zero
+            this.breed = breed.trim();
+        }
+    }
 }
